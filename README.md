@@ -1,2 +1,20 @@
-# readme-generator
-This website creates a professional README.
+# README Generator
+
+[Link to My Project](#)
+
+## Table of Contents
+- [Description](#description)
+- [Visuals](#visuals)
+
+## Description 
+This application produces a professional README based off answered questions.  
+
+Features Include:
+- TEXT HERE
+
+## Visuals 
+
+The following is a screenshot of the initial page:
+
+![screenshot](#)
+
