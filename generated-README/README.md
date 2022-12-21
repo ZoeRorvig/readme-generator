@@ -1,4 +1,4 @@
-# Name
+# README Generator
 
   ![badge](https://img.shields.io/badge/License-MIT-yellow.svg)
 
@@ -14,15 +14,15 @@
 
   ## Description
 
-  this
+  This project is to produce professional looking READMEs.
 
   ## Installation
 
-  d
+  N/A
 
   ## Usage
 
-  d
+  Enter "node index.js" into the command terminal to start the program.
   
   ## License
 To get more information for this license, please see [MIT](https://opensource.org/licenses/MIT)!
@@ -30,12 +30,12 @@ To get more information for this license, please see [MIT](https://opensource.or
   ## Contributing
 
   The contribution guidelines are as follows:
-  d
+  N/A
   
   ## Tests
 
-  d
+  N/A
   
   ## Questions
 
-  If you have any questions about this repo, you can reach me directly at d. You can find more of my work at [d](https://github.com/d). 
+  If you have any questions about this repo, you can reach me directly at email@email.com. You can find more of my work at [ZoeRorvig](https://github.com/ZoeRorvig). 

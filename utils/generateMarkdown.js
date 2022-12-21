@@ -63,7 +63,7 @@ function renderLicenseSection(license, section) {
       licenseSection += `## License\n`;
       licenseSection += `To get more information for this license, please see [${license}](${renderLicenseLink(license)})!`;
     } else{
-      licenseSection += `[License](#license)`;
+      licenseSection += `- [License](#license)`;
     }
   }
 
@@ -82,7 +82,7 @@ function generateMarkdown(data) {
   - [Description](#description)
   - [Installation](#installation)
   - [Usage](#usage)
-  - ${renderLicenseSection(data.license, 'content')}
+  ${renderLicenseSection(data.license, 'content')}
   - [Contributing](#contributing)
   - [Tests](#test)
   - [Questions](#question)
