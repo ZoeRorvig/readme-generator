@@ -1,20 +1,52 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+// Function that returns a license badge based on which license is passed in.
+// If there is no license, returns an empty string.
+function renderLicenseBadge(license) {
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
+  let licenseBadge;
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
+  switch (license) {
+    case 'MIT': 
+    licenseBadge = `![badge](https://img.shields.io/badge/License-MIT-yellow.svg)`;
+    break;
+    case 'APACHIE 2.0': 
+    licenseBadge = `![badge](https://img.shields.io/badge/License-Apache_2.0-blue.svg)`;
+    break;
+    case 'GNU GPLv3': 
+    licenseBadge = `![badge](https://img.shields.io/badge/License-GPLv3-blue.svg)`;
+    break;
+    case 'Artistic 2.0': 
+    licenseBadge = `![badge](https://img.shields.io/badge/License-Artistic_2.0-0298c3.svg)`;
+    break;
+    case 'None': 
+    licenseBadge = '';
+    break;
+  }
 
-// TODO: Create a function to generate markdown for README
+
+  return licenseBadge;
+}
+
+// Function that returns the license link.
+// If there is no license, returns an empty string.
+function renderLicenseLink(license) {
+
+
+}
+
+// Function that returns the license section of README
+// If there is no license, return an empty string
+function renderLicenseSection(license) {
+
+}
+
+// Function to generate markdown for README
 function generateMarkdown(data) {
+
   return `# ${ data.name }
 
-  # Table of Contents
+  ${ renderLicenseBadge(data.license)}
+
+  ## Table of Contents
 
   - [Description](#description)
   - [Installation](#installation)
@@ -24,21 +56,35 @@ function generateMarkdown(data) {
   - [Tests](#test)
   - [Questions](#question)
 
-  # Description
+  ## Description
 
-  # Installation
+  ${ data.description }
 
-  # Usage
+  ## Installation
+
+  ${ data.installation }
+
+  ## Usage
+
+  ${ data.usage }
   
-  # License
+ 
 
-  # Contributing
+  ## Contributing
+
+  The following people contributed to this repository:
+  ${ data.collaborators } 
+
+  The user can contribute in the following ways:
+  ${ data.contribute }
   
-  # Tests
+  ## Tests
+
+  ${ data.tests }
   
-  # Questions
+  ## Questions
 
-
+  If you have any questions about this repo, you can reach me directly at ${ data.email }. You can find more of my work at [${ data.github }](https://github.com/${ data.github }). 
 `;
 }
 

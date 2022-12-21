@@ -20,8 +20,8 @@ const questions = [
         name: 'license',
         type: 'list',
         message: 'Select the license for your project:',
-        choices: ['MIT License','APACHIE 2.0','GNU GPLv3','Artistic License 2.0','None'],
-        default: 'MIT License',
+        choices: ['MIT', 'APACHIE 2.0', 'GNU GPLv3', 'Artistic 2.0', 'None'],
+        default: 'MIT',
     },
     {
         name: 'installation',
@@ -41,12 +41,12 @@ const questions = [
     {
         name: 'contribute',
         type: 'input',
-        message: 'What does the user need to know about contributing to this repo?',
+        message: 'Enter the contribution guidelines:',
     },
     {
         name: 'tests',
         type: 'input',
-        message: 'How can someone test your application?',
+        message: 'Enter the test instructions:',
     },
     {
         name: 'github',
@@ -55,24 +55,24 @@ const questions = [
     },
     {
         name: 'email',
-        type: 'input',
+        type: 'email',
         message: 'Enter your email address:',
     },
 ];
 
 // Function to write README file
-function writeToFile(fileName, data) {
+function writeToFile(data) {
     fs.writeFile(`./generated-README/README.md`, generateMarkdown(data), (err) =>
-    err ? console.error(err) : console.log(`Successfully generated README!`)
-  );
- }
+        err ? console.error(err) : console.log(`Successfully generated README!`)
+    );
+}
 
 // Function to initialize app
 function init() {
     inquirer
         .prompt(questions)
-        .then((response) => {
-            writeToFile(response.name, response);
+        .then((answers) => {
+            writeToFile(answers);
         })
         .catch((err) => {
             console.log(err);
