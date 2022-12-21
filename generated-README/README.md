@@ -24,7 +24,7 @@
 
   
   
-  ## LicenseTo get more information for this license, please see [MIT License](https://opensource.org/licenses/MIT)
+  https://opensource.org/licenses/MIT
 
   ## Contributing
 

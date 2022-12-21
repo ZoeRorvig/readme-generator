@@ -29,8 +29,27 @@ function renderLicenseBadge(license) {
 // Function that returns the license link.
 // If there is no license, returns an empty string.
 function renderLicenseLink(license) {
+  let licenseLink;
 
+  switch (license) {
+    case 'MIT': 
+    licenseLink = `https://opensource.org/licenses/MIT`;
+    break;
+    case 'APACHIE 2.0': 
+    licenseLink = `https://opensource.org/licenses/Apache-2.0`;
+    break;
+    case 'GNU GPLv3': 
+    licenseLink = `https://www.gnu.org/licenses/gpl-3.0`;
+    break;
+    case 'Artistic 2.0': 
+    licenseLink = `https://opensource.org/licenses/Artistic-2.0`;
+    break;
+    case 'None': 
+    licenseLink = '';
+    break;
+  }
 
+return licenseLink;
 }
 
 // Function that returns the license section of README
@@ -68,7 +87,7 @@ function generateMarkdown(data) {
 
   ${ data.usage }
   
- 
+  ${ renderLicenseLink( data.license )}
 
   ## Contributing
 
