@@ -1,7 +1,5 @@
 # README Generator
 
-[Link to My Project](#)
-
 ## Table of Contents
 - [Description](#description)
 - [Visuals](#visuals)
