@@ -28,4 +28,8 @@ The following is a gif showing the functionality of the program:
 
 ![gif](./images/walkthrough-video.gif)
 
+To go to the walk through video:
+
+[Walk Through Video](https://drive.google.com/file/d/17d3N9y1-5Q1ajPtol3tekn3vxvcvmzjj/view)
+
 
