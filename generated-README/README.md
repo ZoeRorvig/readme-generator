@@ -24,14 +24,12 @@
 
   
   
-  https://opensource.org/licenses/MIT
+  ## License
+To get more information for this license, please see [MIT](https://opensource.org/licenses/MIT)!
 
   ## Contributing
 
-  The following people contributed to this repository:
-   
-
-  The user can contribute in the following ways:
+  The contribution guidelines are as follows:
   
   
   ## Tests

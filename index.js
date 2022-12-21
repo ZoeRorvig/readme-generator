@@ -34,11 +34,6 @@ const questions = [
         message: 'What does the user need to know about using this repo?',
     },
     {
-        name: 'collaborators',
-        type: 'input',
-        message: 'List your collaborators and sources, if any:',
-    },
-    {
         name: 'contribute',
         type: 'input',
         message: 'Enter the contribution guidelines:',
