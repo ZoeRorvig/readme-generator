@@ -62,7 +62,9 @@ const questions = [
 
 // Function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(`${ fileName }.md`, generateMarkdown(data), (err) =>
+    const fileNamed = fileName.toLowerCase();
+    
+    fs.writeFile(`${ fileNamed }.md`, generateMarkdown(data), (err) =>
     err ? console.error(err) : console.log(`Successfully generated README!`)
   );
  }
@@ -72,7 +74,6 @@ function init() {
     inquirer
         .prompt(questions)
         .then((response) => {
-            console.log(response);
             writeToFile(response.name, response);
         })
         .catch((err) => {
